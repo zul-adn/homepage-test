@@ -8,6 +8,7 @@ services:
     container_name: homepage
     ports:
       - '3001:3001'
+    command: sh -c "npm install && npm run dev"
     volumes:
       - .:/app
       - /app/node_modules
